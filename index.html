@@ -45,26 +45,31 @@
             height: 100px;
         }
 
-        .container {
+        /* .container {
             background: rgba(211, 211, 211, 0.558);
-            /* padding-top: 20%; */
-        }
-        h5{
-            color: black;
+            
+        } */
+
+        h5 {
+            color: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="animated fadeOutUp delay-1s text-center" id="fade-out">
+    <!-- <div class="animated fadeOutUp delay-1s text-center" id="fade-out">
         <div id="name">
-            <h1 id="big-name">Noah Glasser</h1>
+            <h1 id="big-name">Welcome</h1>
         </div>
-    </div>
+    </div> -->
     <div id="page-one">
         <div class="py-5"></div>
-        <h1 class="text-center pt-5">Hi, I'm Noah</h1>
-        <h2 class="text-center pt-2 pb-5">Recent Coding Bootcamp graduate and aspiring front-end developer</h2>
+        <div class="py-4"></div>
+        <h1 class="animated fadeInUp text-center pt-5">Noah</h1>
+        <h2 class="animated fadeInUp delay-1s text-center pt-3">Recent Coding Bootcamp graduate,</h2>
+        <h2 class="animated fadeInUp delay-2s text-center pt-3 pb-5">aspiring front-end developer</h2>
+        <div class="py-5"></div>
+        <div class="py-4"></div>
         <div class="text-center py-5">
             <a href="https://www.linkedin.com/in/noah-glasser-38882317a/">
                 <img class="logo mx-2" src="assets/linkedin.svg">
@@ -82,49 +87,54 @@
     </div>
     <div id="page-two">
         <div class="py-5"></div>
-        <div class="container text-center pt-1">
-            <h2>Collaborative Works</h2>
-            <hr>
-            <div class="pb-4">
-                <a href="https://deployedwtt.herokuapp.com">
-                    <h5>Truck Tracker</h5>
-                </a>
-                <a href="https://nbglasser.github.io/Project-1/">
-                    <h5>What The Fridge</h5>
-                </a>
-                <a href="https://spotcheck-416.herokuapp.com/">
-                    <h5>Spot Check</h5>
-                </a>
-                <a href="https://amazing-bookstore.herokuapp.com/">
-                    <h5>Books App</h5>
-                </a>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="container text-center pt-1 col-5">
+                <h2 class="text-light pb-2">Collaborative Works</h2>
+                
+                <div class="pb-4">
+                    <a href="https://deployedwtt.herokuapp.com">
+                        <h5 class="py-1">Truck Tracker</h5>
+                    </a>
+                    <a href="https://nbglasser.github.io/Project-1/">
+                        <h5 class="py-1">What The Fridge</h5>
+                    </a>
+                    <a href="https://spotcheck-416.herokuapp.com/">
+                        <h5 class="py-1">Spot Check</h5>
+                    </a>
+                    <a href="https://amazing-bookstore.herokuapp.com/">
+                        <h5 class="py-1">Books App</h5>
+                    </a>
+                </div>
             </div>
-
-            <h2>Solo Projects</h2>
-            <hr>
-            <div class="pb-2">
-                <a href="https://frozen-falls-59474.herokuapp.com/">
-                    <h5>Personality Quiz</h5>
-                </a>
-                <a href="https://github.com/NBGlasser/hangman">
-                    <h5>Command Line Hangman</h5>
-                </a>
-                <a href="https://boiling-ravine-42307.herokuapp.com/">
-                    <h5>Eat Da Sandvich</h5>
-                </a>
-                 <a href="https://nbglasser.github.io/unit-4-game/">
-                    <h5>X-Treme Golf</h5>
-                </a>
-                <a href="https://nbglasser.github.io/Psychic-Game/">
-                    <h5>Psychic Game</h5>
-                </a>
-                <a href="https://nbglasser.github.io/06-API-project/">
-                    <h5>Manly Website</h5>
-                </a>
-                <a href="https://github.com/NBGlasser/liri-node-app">
-                    <h5>Command Line API App</h5>
-                </a>
+            <div class="container text-center pt-1 col-5">
+                <h2 class="text-light pb-2">Solo Projects</h2>
+               
+                <div class="pb-2">
+                    <a href="https://frozen-falls-59474.herokuapp.com/">
+                        <h5 class="py-1">Personality Quiz</h5>
+                    </a>
+                    <a href="https://github.com/NBGlasser/hangman">
+                        <h5 class="py-1">Command Line Hangman</h5>
+                    </a>
+                    <a href="https://boiling-ravine-42307.herokuapp.com/">
+                        <h5 class="py-1">Eat Da Sandvich</h5>
+                    </a>
+                    <a href="https://nbglasser.github.io/unit-4-game/">
+                        <h5 class="py-1">X-Treme Golf</h5>
+                    </a>
+                    <a href="https://nbglasser.github.io/Psychic-Game/">
+                        <h5 class="py-1">Psychic Game</h5>
+                    </a>
+                    <a href="https://nbglasser.github.io/06-API-project/">
+                        <h5 class="py-1">Manly Website</h5>
+                    </a>
+                    <a href="https://github.com/NBGlasser/liri-node-app">
+                        <h5 class="py-1">Command Line API App</h5>
+                    </a>
+                </div>
             </div>
+            <div class="col-1"></div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
