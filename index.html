@@ -53,13 +53,24 @@
         h5 {
             color: white;
         }
-        h5:hover{
+
+        h5:hover {
             color: darkgrey;
             text-decoration: none;
         }
-        a:hover{
+
+        a:hover {
             text-decoration: none;
         }
+        p{
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
     </style>
 </head>
 
@@ -75,43 +86,53 @@
             <div class="py-4"></div>
             <h1 class="animated fadeInUp text-center pt-5">Noah</h1>
             <h2 class="animated fadeInUp delay-1s text-center pt-3">Recent Coding Bootcamp graduate</h2>
-            <h2 class="animated fadeInUp delay-2s text-center pt-3 pb-5">Aspiring front-end developer</h2>
+            <h2 class="animated fadeInUp delay-2s text-center pt-3 pb-5">Front-end developer</h2>
             <div class="py-5"></div>
             <div class="py-2"></div>
             <div class="text-center py-5">
-                <a href="https://www.linkedin.com/in/noah-glasser-38882317a/">
+                <a title="Linkedin" href="https://www.linkedin.com/in/noah-glasser-38882317a/">
                     <img class="logo mx-2" src="assets/linkedin.svg">
                 </a>
-                <a href="https://github.com/NBGlasser">
+                <a title="Github" href="https://github.com/NBGlasser">
                     <img class="logo mx-2" src="assets/github.svg">
                 </a>
-                <a href="mailto:NoahBGlasser@gmail.com">
+                <a title="Contact Me" href="mailto:NoahBGlasser@gmail.com">
                     <img class="logo mx-2" src="assets/mail.png">
                 </a>
-                <a class="page-scroll" href="#page-two">
+                <a title="Portfolio" class="page-scroll" href="#page-two">
                     <img class="logo mx-2" src="assets/folder.png">
                 </a>
             </div>
         </div>
         <div class="section" id="page-two">
             <div class="py-5"></div>
+            <h1 class="text-center text-light">Portfolio</h1>
+            <h3 class="text-center text-light pb-2">Hover for more information</h3>
             <div class="row">
                 <div class="col-1"></div>
                 <div class="container text-center pt-1 col-5">
                     <h2 class="animated fadeInUp text-light pb-4">Collaborative Works</h2>
 
                     <div class="animated fadeInUp delay-1s pb-4">
-                        <a href="https://deployedwtt.herokuapp.com">
+                        <a class="project" href="https://deployedwtt.herokuapp.com">
                             <h5 class="py-1">Truck Tracker</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">ReactJS, Firebase, Google Maps API, SQL, Sequelize, Bootstrap, Firebase Auth</p>
                         </a>
-                        <a href="https://nbglasser.github.io/Project-1/">
+                        <a class="project" href="https://nbglasser.github.io/Project-1/">
                             <h5 class="py-1">What The Fridge</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">Jquery, Firebase, Youtube API, Edamam API, Bootstrap</p>
                         </a>
-                        <a href="https://spotcheck-416.herokuapp.com/">
+                        <a class="project" href="https://spotcheck-416.herokuapp.com/">
                             <h5 class="py-1">Spot Check</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">HTML, JQuery, Google Maps API, SQL, Passport</p>
                         </a>
-                        <a href="https://amazing-bookstore.herokuapp.com/">
+                        <a class="project" href="https://amazing-bookstore.herokuapp.com/">
                             <h5 class="py-1">Books App</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">ReactJS, MongoDB, Google Books API, Bootstrap</p>
                         </a>
                     </div>
                 </div>
@@ -119,26 +140,40 @@
                     <h2 class="animated fadeInUp text-light pb-4">Solo Projects</h2>
 
                     <div class="animated fadeInUp delay-1s pb-2">
-                        <a href="https://frozen-falls-59474.herokuapp.com/">
+                        <a class="project" href="https://frozen-falls-59474.herokuapp.com/">
                             <h5 class="py-1">Personality Quiz</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">HTML, CSS, Node, Express, JQuery</p>
                         </a>
-                        <a href="https://github.com/NBGlasser/hangman">
+                        <a class="project" href="https://github.com/NBGlasser/hangman">
                             <h5 class="py-1">Command Line Hangman</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">Node, Constructor Functions, Inquirer Node Package</p>
                         </a>
-                        <a href="https://boiling-ravine-42307.herokuapp.com/">
+                        <a class="project" href="https://boiling-ravine-42307.herokuapp.com/">
                             <h5 class="py-1">Eat Da Sandvich</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">HTML, CSS, Node, Express, JQuery, SQL, Bootstrap</p>
                         </a>
-                        <a href="https://nbglasser.github.io/unit-4-game/">
+                        <a class="project" href="https://nbglasser.github.io/unit-4-game/">
                             <h5 class="py-1">X-Treme Golf</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">HTML, CSS, JQuery</p>
                         </a>
-                        <a href="https://nbglasser.github.io/Psychic-Game/">
+                        <a class="project" href="https://nbglasser.github.io/Psychic-Game/">
                             <h5 class="py-1">Psychic Game</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">HTML, CSS, Javascript</p>
                         </a>
-                        <a href="https://nbglasser.github.io/06-API-project/">
+                        <a class="project" href="https://nbglasser.github.io/06-API-project/">
                             <h5 class="py-1">Manly Website</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">HTML, CSS, JQuery, AJAX, Giphy API</p>
                         </a>
-                        <a href="https://github.com/NBGlasser/liri-node-app">
+                        <a class="project" href="https://github.com/NBGlasser/liri-node-app">
                             <h5 class="py-1">Command Line API App</h5>
+                            <p class="hidden">Technologies Used:</p>
+                            <p class="hidden">Node, Axios Node Package, Inquirer Node Package</p>
                         </a>
                     </div>
                 </div>
@@ -152,9 +187,19 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.js"></script> -->
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
-    //     var myFullpage = new fullpage('#fullpage', {
-	// 	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
-	// });
-        
+        //     var myFullpage = new fullpage('#fullpage', {
+        // 	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+        // });
+        $(".project").hover(function () {
+            $(this).children("p").addClass("animated slideInDown")
+            $(this).children("p").removeClass("hidden");
+        });
+        $(".project").bind("mouseleave", function () {
+            $(this).children("p").addClass("hidden");
+        });
+
+
+
+
     </script>
 </body>
