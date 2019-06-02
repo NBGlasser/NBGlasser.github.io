@@ -5,8 +5,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond:600' rel='stylesheet' type='text/css'>
     <title>Noah Glasser</title>
     <style>
+        body{
+            font-family: 'Cormorant Garamond', serif;
+        }
         #page-one {
             background-image: url(assets/ocean.jpg);
             width: 100vw;
@@ -62,15 +66,34 @@
         a:hover {
             text-decoration: none;
         }
-        p{
+
+        p {
             color: white;
         }
 
         .hidden {
             display: none;
-            
+
         }
 
+        .hvr-grow {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -90,16 +113,16 @@
             <div class="py-5"></div>
             <div class="py-2"></div>
             <div class="text-center py-5">
-                <a title="Linkedin" href="https://www.linkedin.com/in/noah-glasser-38882317a/">
+                <a title="Linkedin" class="hvr-grow" href="https://www.linkedin.com/in/noah-glasser-38882317a/">
                     <img class="logo mx-2" src="assets/linkedin.svg">
                 </a>
-                <a title="Github" href="https://github.com/NBGlasser">
+                <a title="Github" class="hvr-grow" href="https://github.com/NBGlasser">
                     <img class="logo mx-2" src="assets/github.svg">
                 </a>
-                <a title="Contact Me" href="mailto:NoahBGlasser@gmail.com">
+                <a title="Contact Me" class="hvr-grow" href="mailto:NoahBGlasser@gmail.com">
                     <img class="logo mx-2" src="assets/mail.png">
                 </a>
-                <a title="Portfolio" class="page-scroll" href="#page-two">
+                <a title="Portfolio" class="hvr-grow page-scroll" href="#page-two">
                     <img class="logo mx-2" src="assets/folder.png">
                 </a>
             </div>
@@ -114,22 +137,23 @@
                     <h2 class="animated fadeInUp text-light pb-4">Collaborative Works</h2>
 
                     <div class="animated fadeInUp delay-1s pb-4">
-                        <a class="project" href="https://deployedwtt.herokuapp.com">
+                        <a id="1" value="1" class="project" href="https://deployedwtt.herokuapp.com">
                             <h5 class="py-1">Truck Tracker</h5>
                             <p class="hidden">Technologies Used:</p>
-                            <p class="hidden">ReactJS, Firebase, Google Maps API, SQL, Sequelize, Bootstrap, Firebase Auth</p>
+                            <p class="hidden">ReactJS, Firebase, Google Maps API, SQL, Sequelize, Bootstrap, Firebase
+                                Auth</p>
                         </a>
-                        <a class="project" href="https://nbglasser.github.io/Project-1/">
+                        <a id="2" value="2" class="project" href="https://nbglasser.github.io/Project-1/">
                             <h5 class="py-1">What The Fridge</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">Jquery, Firebase, Youtube API, Edamam API, Bootstrap</p>
                         </a>
-                        <a class="project" href="https://spotcheck-416.herokuapp.com/">
+                        <a id="3" value="3" class="project" href="https://spotcheck-416.herokuapp.com/">
                             <h5 class="py-1">Spot Check</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, JQuery, Google Maps API, SQL, Passport</p>
                         </a>
-                        <a class="project" href="https://amazing-bookstore.herokuapp.com/">
+                        <a id="4" value="4" class="project" href="https://amazing-bookstore.herokuapp.com/">
                             <h5 class="py-1">Books App</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">ReactJS, MongoDB, Google Books API, Bootstrap</p>
@@ -140,37 +164,37 @@
                     <h2 class="animated fadeInUp text-light pb-4">Solo Projects</h2>
 
                     <div class="animated fadeInUp delay-1s pb-2">
-                        <a class="project" href="https://frozen-falls-59474.herokuapp.com/">
+                        <a id="21" value="21" class="project" href="https://frozen-falls-59474.herokuapp.com/">
                             <h5 class="py-1">Personality Quiz</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, Node, Express, JQuery</p>
                         </a>
-                        <a class="project" href="https://github.com/NBGlasser/hangman">
+                        <a id="22" value="22" class="project" href="https://github.com/NBGlasser/hangman">
                             <h5 class="py-1">Command Line Hangman</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">Node, Constructor Functions, Inquirer Node Package</p>
                         </a>
-                        <a class="project" href="https://boiling-ravine-42307.herokuapp.com/">
+                        <a id="23" value="23" class="project" href="https://boiling-ravine-42307.herokuapp.com/">
                             <h5 class="py-1">Eat Da Sandvich</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, Node, Express, JQuery, SQL, Bootstrap</p>
                         </a>
-                        <a class="project" href="https://nbglasser.github.io/unit-4-game/">
+                        <a id="24" value="24" class="project" href="https://nbglasser.github.io/unit-4-game/">
                             <h5 class="py-1">X-Treme Golf</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, JQuery</p>
                         </a>
-                        <a class="project" href="https://nbglasser.github.io/Psychic-Game/">
+                        <a id="25" value="25" class="project" href="https://nbglasser.github.io/Psychic-Game/">
                             <h5 class="py-1">Psychic Game</h5>
                             <p class="hidden">Technologies Used:</p>
-                            <p class="hidden">HTML, CSS, Javascript</p>
+                            <p class="hidden">HTML, CSS, Vanilla Javascript</p>
                         </a>
-                        <a class="project" href="https://nbglasser.github.io/06-API-project/">
+                        <a id="26" value="26" class="project" href="https://nbglasser.github.io/06-API-project/">
                             <h5 class="py-1">Manly Website</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, JQuery, AJAX, Giphy API</p>
                         </a>
-                        <a class="project" href="https://github.com/NBGlasser/liri-node-app">
+                        <a id="27" value="27" class="project" href="https://github.com/NBGlasser/liri-node-app">
                             <h5 class="py-1">Command Line API App</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">Node, Axios Node Package, Inquirer Node Package</p>
@@ -190,13 +214,19 @@
         //     var myFullpage = new fullpage('#fullpage', {
         // 	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
         // });
-        $(".project").hover(function () {
-            $(this).children("p").addClass("animated slideInDown")
-            $(this).children("p").removeClass("hidden");
-        });
-        $(".project").bind("mouseleave", function () {
-            $(this).children("p").addClass("hidden");
-        });
+        $(function () {
+            $(".project").hover(function () {
+                $(this).children("p").addClass("animated slideInDown")
+                $(this).children("p").removeClass("hidden");
+                // for (i = 0; i < 10; i++) {
+                //     console.log(i)
+                //     $("#" + i).animate({top: '250px'})
+                // }
+            });
+            $(".project").bind("mouseleave", function () {
+                $(this).children("p").addClass("hidden");
+            });
+        })
 
 
 
