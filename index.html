@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
     <title>Noah Glasser</title>
     <style>
-        body{
+        body {
             font-family: 'Open Sans', sans-serif;
         }
+
         #page-one {
             background-image: url(assets/ocean.jpg);
             width: 100vw;
@@ -21,7 +22,7 @@
         #page-two {
             background-image: url(assets/deep.jpg);
             width: 100vw;
-            height: 100vh;
+            height: 150vh;
             background-size: cover;
         }
 
@@ -71,10 +72,10 @@
             color: white;
         }
 
-        .hidden {
+        /* .hidden {
             display: none;
 
-        }
+        } */
 
         .hvr-grow {
             display: inline-block;
@@ -93,6 +94,31 @@
         .hvr-grow:active {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
+        }
+
+        .collapsible {
+            /* background-color: #eee; */
+            color: #eee;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            /* background-color: #ccc; */
+            display: inherit !important;
+        }
+
+        .project {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            /* background-color: #f1f1f1; */
         }
     </style>
 </head>
@@ -130,31 +156,39 @@
         <div class="section" id="page-two">
             <div class="py-5"></div>
             <h1 class="text-center text-light">Portfolio</h1>
-            <h3 class="text-center text-light pb-2">Hover for more information</h3>
+            <h3 class="text-center text-light pb-2">Click For More Information</h3>
             <div class="row">
                 <div class="col-1"></div>
                 <div class="container text-center pt-1 col-5">
                     <h2 class="animated fadeInUp text-light pb-4">Collaborative Works</h2>
 
                     <div class="animated fadeInUp delay-1s pb-4">
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Truck Tracker</h5>
+                        </div>
                         <a id="1" value="1" class="project" href="https://trucktrackerdemo.herokuapp.com/">
-                            <h5 class="py-1">Truck Tracker</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">ReactJS, Firebase, Google Maps API, SQL, Sequelize, Bootstrap, Firebase
                                 Auth</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">What The Fridge</h5>
+                        </div>
                         <a id="2" value="2" class="project" href="https://nbglasser.github.io/Project-1/">
-                            <h5 class="py-1">What The Fridge</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">Jquery, Firebase, Youtube API, Edamam API, Bootstrap</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Spot Check</h5>
+                        </div>
                         <a id="3" value="3" class="project" href="https://spotcheck-416.herokuapp.com/">
-                            <h5 class="py-1">Spot Check</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, JQuery, Google Maps API, SQL, Passport</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Books App</h5>
+                        </div>
                         <a id="4" value="4" class="project" href="https://amazing-bookstore.herokuapp.com/">
-                            <h5 class="py-1">Books App</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">ReactJS, MongoDB, Google Books API, Bootstrap</p>
                         </a>
@@ -164,38 +198,52 @@
                     <h2 class="animated fadeInUp text-light pb-4">Solo Projects</h2>
 
                     <div class="animated fadeInUp delay-1s pb-2">
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Personality Quiz</h5>
+                        </div>
                         <a id="21" value="21" class="project" href="https://frozen-falls-59474.herokuapp.com/">
-                            <h5 class="py-1">Personality Quiz</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, Node, Express, JQuery</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Command Line Hangman</h5>
+                        </div>
                         <a id="22" value="22" class="project" href="https://github.com/NBGlasser/hangman">
-                            <h5 class="py-1">Command Line Hangman</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">Node, Constructor Functions, Inquirer Node Package</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Eat Da Sandvich</h5>
+                            </div>
                         <a id="23" value="23" class="project" href="https://boiling-ravine-42307.herokuapp.com/">
-                            <h5 class="py-1">Eat Da Sandvich</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, Node, Express, JQuery, SQL, Bootstrap</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">X-Treme Golf</h5>
+                            </div>
                         <a id="24" value="24" class="project" href="https://nbglasser.github.io/unit-4-game/">
-                            <h5 class="py-1">X-Treme Golf</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, JQuery</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Psychic Game</h5>
+                            </div>
                         <a id="25" value="25" class="project" href="https://nbglasser.github.io/Psychic-Game/">
-                            <h5 class="py-1">Psychic Game</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, Vanilla Javascript</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Manly Website</h5>
+                            </div>
                         <a id="26" value="26" class="project" href="https://nbglasser.github.io/06-API-project/">
-                            <h5 class="py-1">Manly Website</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">HTML, CSS, JQuery, AJAX, Giphy API</p>
                         </a>
+                        <div class="collapsible text-center">
+                            <h5 class="pb-1">Command Line API App</h5>
+                            </div>
                         <a id="27" value="27" class="project" href="https://github.com/NBGlasser/liri-node-app">
-                            <h5 class="py-1">Command Line API App</h5>
                             <p class="hidden">Technologies Used:</p>
                             <p class="hidden">Node, Axios Node Package, Inquirer Node Package</p>
                         </a>
@@ -214,20 +262,34 @@
         //     var myFullpage = new fullpage('#fullpage', {
         // 	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
         // });
-        $(function () {
-            $(".project").hover(function () {
-                $(this).children("p").addClass("animated slideInDown")
-                $(this).children("p").removeClass("hidden");
-                // for (i = 0; i < 10; i++) {
-                //     console.log(i)
-                //     $("#" + i).animate({top: '250px'})
-                // }
-            });
-            $(".project").bind("mouseleave", function () {
-                $(this).children("p").addClass("hidden");
-            });
-        })
+        // $(function () {
+        //     $(".project").on("click", function () {
+        //         $(this).children("p").addClass("animated slideInDown")
+        //         $(this).children("p").removeClass("hidden");
+        //         // for (i = 0; i < 10; i++) {
+        //         //     console.log(i)
+        //         //     $("#" + i).animate({top: '250px'})
+        //         // }
+        //     });
+        //     $(".project").bind("mouseleave", function () {
+        //         $(this).children("p").addClass("hidden");
+        //     });
+        // })
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var project = this.nextElementSibling;
+                project.classList.toggle("active")
+                if (project.style.maxHeight) {
+                    project.style.maxHeight = null;
+                } else {
+                    project.style.maxHeight = 96 + "px";
+                }
+            });
+        }
 
 
 
